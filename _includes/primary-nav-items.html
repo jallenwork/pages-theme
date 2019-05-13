@@ -1,0 +1,38 @@
+<ul>
+  <li class="{% if page.author %}current{% endif %}">
+      <a href="{{ site.github.url }}/">News</a>
+  </li>
+  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+      <a href="{{ site.github.url }}/docs/home/">Docs</a>
+  </li>
+  <li>
+    <a href="{{ site.repository }}">GitHub</a>
+  </li>
+  <li>
+      <div class="dropdwn">
+          <div class="dropbtn">More
+              <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="dropdwn-content">
+              <br />
+              <a href="link-path">Link-Name</a>
+              <br/>
+              <br/>
+              <a href="link-path">Other-Link</a>
+              <br/>
+              <br/>
+              <a href="link-path">One-More</a>
+              <br />
+              <br />
+          </div>
+      </div>
+  </li>
+  <li>
+    <div id="search">
+      <form action="{{site.github.url}}/search.html" method="get">
+        <input type="text" id="search-box" name="query">
+        <input type="submit" value="search">
+      </form>
+    </div>
+  </li>
+</ul>

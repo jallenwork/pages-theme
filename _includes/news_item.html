@@ -1,0 +1,31 @@
+<article>
+  <h2>
+    <a href="{{ site.github.url }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      {{ post.categories | array_to_sentence_string }}
+    </span>
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      {{ post.date | date_to_string }}
+    </span>
+    <a href="{{ site.url }}/{{ post.author }}" class="post-author">
+      {% assign author = post.author %}
+      {{ post.author }}
+    </a>
+  </div>
+  <div class="post-content">
+    {{ post.content }}
+  </div>
+  {% if post.version %}
+  <div>
+    <a href="{{ site.repository }}/releases/tag/{{ post.version }}">
+      GitHub Release
+    </a>
+  </div>
+  {% endif %}
+</article>

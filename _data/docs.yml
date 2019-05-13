@@ -1,0 +1,15 @@
+- title: Setup
+  docs:
+  - home
+  - user-installation
+
+- title: Transition
+  docs:
+  - transition
+
+- title: Reference
+  docs:
+  - reference
+  - mashfile-toml
+  - mashfile-legacy
+  - generatedsrc
